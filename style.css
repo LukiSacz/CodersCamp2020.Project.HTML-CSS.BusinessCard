@@ -1,0 +1,260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Oswald', sans-serif;
+}
+
+/* Nagłówek */
+  
+header {
+    position: relative;
+    background-image: url('./img/background.jpg');
+    background-attachment: fixed;
+    box-shadow: inset 0 0 0 1000px rgba(0,0,0,.7); /* Czarna nakładka na zdjęcie w tle */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    overflow: hidden;
+    max-width: 1920px;
+    margin: 0 auto;
+    color: white;
+    text-transform: uppercase;
+}
+
+header .welcome {
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    margin-right: 10%;
+}
+
+header h1 {
+    font-size: 50px;
+}
+
+header h2 {
+    font-size: 40px;
+    font-weight: 300;
+}
+
+header button {
+    background-color: transparent;
+    color: white;
+    border: 2px solid white;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 300;
+    margin-top: 20px;
+    transition: .3s;
+}
+
+header button:hover {
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+    border: 2px solid black;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+}
+
+header a:hover {
+    color: black;
+}
+
+/* Sekcja 'O mnie' */
+
+.about {
+      margin: 50px auto 60px auto;
+      text-align: center;
+      width: 90%;
+}
+
+.about h2 {
+      text-transform: uppercase;
+      font-size: 40px;
+}
+
+.about h3 {
+      text-transform: uppercase;
+      font-size: 25px;
+}
+
+.about .info {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      margin-top: 50px;
+}
+
+.about .info div {
+      text-align: center;
+}
+
+.about img {
+      width: 50%;
+      border-radius: 50%;
+      margin: 30px auto;
+}
+
+.about p {
+      width: 90%;
+      margin: auto;
+      display: block;
+}
+
+.about .flex {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      height: 30%;
+}
+
+@media (max-width: 1280px) {
+    .about .info {
+        grid-template-columns: 1fr;
+    }
+    .about img {
+        width: 40%;
+        border-radius: 50%;
+        margin: 10px auto;
+    }
+    .about .info div {
+        margin-bottom: 50px;
+    }
+}
+
+@media (max-width: 500px) {
+    .about .flex {
+        height: 50%;
+    }
+}
+
+/* Sekcja 'Portfolio' */
+.portfolio, 
+.portfolio-mobile {
+    background-color: #000;
+    margin: 0 auto;
+    padding: 50px 5%;
+    text-align: center;
+    color: black;
+}
+
+.portfolio h2,
+.portfolio-mobile h2 {
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+}
+
+.portfolio .description,
+.portfolio-mobile .description {
+    transition: .5s;
+}
+
+.portfolio h3,
+.portfolio-mobile h3 {
+    text-transform: uppercase;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid black;
+}
+
+.projects {
+    width: 90%;
+    margin: auto;
+}
+
+.project {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 50px auto;
+    background-color: #ECEFF1;
+}
+
+.project .image {
+    overflow: hidden;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+.project .description div {
+    margin: auto;
+    width: 80%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.project button {
+    cursor: pointer;
+    background-color: transparent;
+    border: 1px solid black;
+    transition: .3s;
+    margin-top: 20px;
+    height: 50px;
+    width: 150px;
+    overflow: hidden;
+    line-height: 30px;
+}
+
+.project button:hover {
+    background-color: #000;
+    border: 1px solid white;
+    color: white;
+}
+
+.project span {
+    display: block;
+    font-weight: 900;
+    margin-top: 10px;
+}
+
+.project h3 span {
+    display: inline;
+    color: red;
+}
+
+.portfolio-mobile {
+    display: none;
+}
+
+.project:nth-of-type(4) button span{
+    display: block;
+    margin: auto;
+    font-weight: 400;
+    width: 150px;
+}
+
+.project:nth-of-type(4) button:hover {
+    background-color: #f00;
+    color: black;
+    border: 1px solid black;
+    cursor: default;
+}
+
+@media (max-width: 1280px) {
+    .portfolio {
+        display: none;
+    }
+
+    .portfolio-mobile {
+        display: block;
+    }
+
+    .project {
+        grid-template-columns: 1fr;
+    }
+}

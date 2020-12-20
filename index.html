@@ -2,17 +2,192 @@
 <html lang="pl">
 
 <head>
-    <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Łukasz Sączawa - Junior Web Developer</title>
     <meta name="description" content="Strona wizytówka Junior Web Developera - Łukasza Sączawy">
-
+    <link href="https://fonts.googleapis.com/css?family=Saira+Condensed:400,700|Saira:300,400&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="./img/favicon.ico" rel="icon" type="image/x-icon" />
 </head>
 
 <body>
+    <header>
+        <div class="welcome">
+            <h1>Łukasz Sączawa</h1>
+            <h2>Junior Web Developer</h2>
+            <button><a href="#portfolio">Zobacz moje portfolio</a></button>
+        </div>
+    </header>
 
-<p>Hello World!</p>
+    <section class="about">
+        <h2>o mnie</h2>
+        <div class="info">
+            <div>
+                <h3>Kim jestem?</h3>
+                <img src="./img/photo.jpg" alt="">
+                <div class="flex">
+                    <p>Nazywam się Łukasz Sączawa, jestem Junior Web Developerem. Tworzenie stron internetowych to moja pasja.
+                    Na swoim koncie posiadam już kilka projektów, jednak wciąż jestem na samym początku swojej przygody z Web Developmentem.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>Co potrafię?</h3>
+                <img src="./img/frontend.jpg" alt="">
+                <div class="flex">
+                    <p>Zaczynałem od tworzenia stron internetowych w systemie zarządzania treścią Wordpress. Obecnie tworzę również strony oparte o
+                    języki HTML, CSS oraz JavaScript. Znam również podstawy takich technologii jak Git, Bootstrap, jQuery, PHP i MySQL.
+                    </p>
+                </div>
+            </div>
+            <div>
+                <h3>Jakie mam ambicje?</h3>
+                <img src="./img/backend.jpg" alt="">
+                <div class="flex">
+                    <p>W ciągu najbliższych miesięcy chciałbym znacząco poszerzyć swoje umiejętności związane z programowaniem webowym. Poza
+                    doskonaleniem się we wcześniej wspomnianych technologiach, planuję również naukę nowych języków programowania oraz frameworków.
+                    W dłuższej perspektywie dążę do zostania Full Stack Developerem.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="portfolio">
+        <h2 id="portfolio">Moje najważniejsze projekty</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio1.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Landing Page "Lekcje z lektorem"</h3>
+                    <div>
+                        <p>Landing Page reklamujący zajęcia językowe z lektorem online oferowane przez firmę Funmedia. Projekt jest
+                            w pełni responsywny, zawiera odnośniki do testów poziomujących oraz zewnętrzny formularz kontaktowy dla
+                            potencjalnych klientów.<br>
+                            <span>Wykorzystane technologie:</span> HTML, CSS, jotForm.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="description">
+                    <h3>E-lementarz nauczyciela</h3>
+                    <div>
+                        <p>E-lementarz nauczyciela jest serwisem przedstawiającym interaktywne produkty firmy Funmedia przeznaczone dla 
+                            nauczycieli. Projekt zawiera kilka podstron wraz z formularzem kontaktowym dla potencjalnych klientów.<br>
+                            <span>Wykorzystane technologie:</span> Wordpress, Sendinblue.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/portfolio2.png" alt="">
+                </div>
+            </div>
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio3.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Konferencja "Relacje fiskalne"</h3>
+                    <div>
+                        <p>Strona internetowa stworzona w dwóch wersjach językowych w celu promocji XII Konferencji Naukowej "Relacje fiskalne Państwo - Samorząd 
+                            Terytorialny" odbywającej się na Uniwersytecie Ekonomicznym we Wrocławiu.<br>
+                            <span>Wykorzystane technologie:</span> Wordpress, Google Forms.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="description">
+                    <h3>Lerni - nowy landing page <span>(Projekt w budowie)</span></h3>
+                    <div>
+                        <p>Nowa wersja strony głównej platformy edukacyjnej Lerni - flagowego produktu firmy Funmedia, pozwalającego na naukę 
+                            kilku języków obcych na wielu poziomach zaawansowania.<br>
+                            <span>Wykorzystane technologie:</span> HTML, CSS, Bootstrap.
+                        </p>
+                        <button>Projekt w budowie</button>
+                    </div>
+                </div>
+                <div class="image">
+                    <img src="./img/portfolio4.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
 
+    <section class="portfolio-mobile">
+        <h2 id="portfolio">Moje najważniejsze projekty</h2>
+        <div class="projects">
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio1.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Landing Page "Lekcje z lektorem"</h3>
+                    <div>
+                        <p>Landing Page reklamujący zajęcia językowe z lektorem online oferowane przez firmę Funmedia. Projekt jest
+                            w pełni responsywny, zawiera odnośniki do testów poziomujących oraz zewnętrzny formularz kontaktowy dla
+                            potencjalnych klientów.<br>
+                            <span>Wykorzystane technologie:</span> HTML, CSS, jotForm.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio2.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>E-lementarz nauczyciela</h3>
+                    <div>
+                        <p>E-lementarz nauczyciela jest serwisem przedstawiającym interaktywne produkty firmy Funmedia przeznaczone dla 
+                            nauczycieli. Projekt zawiera kilka podstron wraz z formularzem kontaktowym dla potencjalnych klientów.<br>
+                            <span>Wykorzystane technologie:</span> Wordpress, Sendinblue.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio3.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Konferencja "Relacje fiskalne"</h3>
+                    <div>
+                        <p>Strona internetowa stworzona w dwóch wersjach językowych w celu promocji XII Konferencji Naukowej "Relacje fiskalne Państwo - Samorząd 
+                            Terytorialny" odbywającej się na Uniwersytecie Ekonomicznym we Wrocławiu.<br>
+                            <span>Wykorzystane technologie:</span> Wordpress, Google Forms.
+                        </p>
+                        <button>Zobacz projekt</button>
+                    </div>
+                </div>
+            </div>
+            <div class="project">
+                <div class="image">
+                    <img src="./img/portfolio4.png" alt="">
+                </div>
+                <div class="description">
+                    <h3>Lerni - nowy landing page <span>(Projekt w budowie)</span></h3>
+                    <div>
+                        <p>Nowa wersja strony głównej platformy edukacyjnej Lerni - flagowego produktu firmy Funmedia, pozwalającego na naukę 
+                            kilku języków obcych na wielu poziomach zaawansowania.<br>
+                            <span>Wykorzystane technologie:</span> HTML, CSS, Bootstrap.
+                        </p>
+                        <button>Projekt w budowie</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </body>
 </html>
